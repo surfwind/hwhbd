@@ -39,13 +39,6 @@ datay=[-2 -2 -2 -2 -2 -2 -2 -2 -2 -2 -1 -3 -4 -4 -5 -6 -7 -8 -9 -10 -11 -12 -5 -
 -33 -34 -35 -33 -34 -33 -34 -33 -33 -33 -33 -33 -33 -33 -34 -33 -34 -33 -34 -35 -34 -34 -35 -35 -36 -36 -37 -37 -38 -38 -39 -39 -40 -40 -41 -41 -42 -42 -43 -43 -44 -44 -45 -45 -45 -45 -46 -46 -46 -46 -46 -46 -46 -46 ...
 -33 -33 -33 -33 -34 -34 -35 -35 -36 -36 -37 -37 -38 -38 -39 -39 -39 -39 -38 -38 -37 -37 -36 -36 -35 -35 -34 -34 -33 -33 -33 -33 -40 -40 -41 -41 -42 -42 -43 -43 -44 -44 -45 -45 -45 -45 -46 -46 -46 -46 -46 -46 -46 -46];
 
-for i=1:length(datax)
-    x=[x datax(i)];
-    y=[y datay(i)];
-    drawnow
-    pause(0.015)
-    plot(x,y,'ro')
-end
 
 x=[x 154];
 y=[y -51];
@@ -69,23 +62,3 @@ ha = axes('Parent',hFig,'Units','pixels',...
 set(gca,'Color','black')
 pause(5)
 hImshow = imshow(img,'Parent',ha);
-
-%{
-figure('Name','HWwwww','Numbertitle','off','Position', get(0,'ScreenSize'),...
-    'WindowStyle','modal','Color','black','Toolbar','none','MenuBar','none')
-%set(gcf,'Position',get(0,'ScreenSize'))
-%set(gcf,'ToolBar','none')
-%set(gcf,'MenuBar','none')
-%set(gcf,'Numbertitle','off')
-%set(gcf,'Color','black')
-set(gca,'Color','black')
-%hw00=imread('http://140.xxx.26.79/ftp/hw00.jpg');
-hw01=imread('http://140.xxx.26.79/ftp/hw01.jpg');
-%hw02=imread('http://140.xxx.26.79/ftp/hw02.jpg');
-%hw03=imread('http://140.xxx.26.79/ftp/hw03.jpg');
-pause(5);
-%imshow(hw00);
-imshow(hw01);
-%imshow(hw02);
-%imshow(hw03);
-%}
